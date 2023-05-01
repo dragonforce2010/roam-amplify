@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "parseWebsiteTitle": {}
+        "parseWebsiteTitle": {
+          "deploymentBucketName": "amplify-roamextension-staging-93448-deployment",
+          "s3Key": "amplify-builds/parseWebsiteTitle-695255464773422b614f-build.zip"
+        }
+      },
+      "api": {
+        "linkParser": {}
       }
     }
   }
