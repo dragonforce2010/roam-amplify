@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/link/parseTitle": {
+      "name": "/link/parseTitle",
+      "lambdaFunction": "parseWebsiteTitle",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
