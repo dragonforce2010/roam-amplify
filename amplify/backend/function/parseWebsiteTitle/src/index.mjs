@@ -8,8 +8,9 @@ import fetch from 'node-fetch';
 export const handler = async (event) => {
   console.log(`EVENT: ${JSON.stringify(event)}`);
   console.log(`event body`, event.body);
-  const payload = event.body;
+  const payload = JSON.parse(event.body);
   const url = payload.url;
+  console.log('payload=', payload, ', url=', url);
   if (!url) {
     return {
       statusCode: 400,
@@ -17,7 +18,9 @@ export const handler = async (event) => {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
       },
-      error: `bad request! url is not valid, url = ${url}`,
+      body: JSON.stringify({
+        error: `bad request! url is not valid, url = ${url}`,
+      }),
     };
   }
 
@@ -37,7 +40,9 @@ export const handler = async (event) => {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
       },
-      websiteTitle: websiteTitle,
+      body: JSON.stringify({
+        websiteTitle: websiteTitle,
+      }),
     };
   } catch (err) {
     console.log(err);
@@ -47,7 +52,9 @@ export const handler = async (event) => {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
       },
-      error: `internal error`,
+      body: JSON.stringify({
+        error: `internal error`,
+      }),
     };
   }
 };
