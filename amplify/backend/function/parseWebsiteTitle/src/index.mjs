@@ -3,13 +3,20 @@
  */
 
 import cheerio from 'cheerio';
+import fetch from 'node-fetch';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   console.log(`EVENT: ${JSON.stringify(event)}`);
-  const url = event.url;
+  console.log(`event body`, event.body);
+  const payload = event.body;
+  const url = payload.url;
   if (!url) {
     return {
       statusCode: 400,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
       error: `bad request! url is not valid, url = ${url}`,
     };
   }
@@ -26,12 +33,20 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
       websiteTitle: websiteTitle,
     };
   } catch (err) {
     console.log(err);
     return {
       statusCode: 500,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
       error: `internal error`,
     };
   }
