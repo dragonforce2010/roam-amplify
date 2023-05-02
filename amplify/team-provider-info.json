@@ -15,7 +15,31 @@
       "function": {
         "parseWebsiteTitle": {
           "deploymentBucketName": "amplify-roamextension-staging-93448-deployment",
-          "s3Key": "amplify-builds/parseWebsiteTitle-49714b50333366616345-build.zip"
+          "s3Key": "amplify-builds/parseWebsiteTitle-326e59456169752b2f50-build.zip"
+        }
+      },
+      "api": {
+        "linkParser": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-roamextension-prod-165020-authRole",
+      "UnauthRoleArn": "arn:aws:iam::853590712058:role/amplify-roamextension-prod-165020-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::853590712058:role/amplify-roamextension-prod-165020-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-roamextension-prod-165020-deployment",
+      "UnauthRoleName": "amplify-roamextension-prod-165020-unauthRole",
+      "StackName": "amplify-roamextension-prod-165020",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:853590712058:stack/amplify-roamextension-prod-165020/666cfa20-e8c6-11ed-bee2-0a4d6f7b3462",
+      "AmplifyAppId": "dqf2pm6ufzibh"
+    },
+    "categories": {
+      "function": {
+        "parseWebsiteTitle": {
+          "deploymentBucketName": "amplify-roamextension-prod-165020-deployment",
+          "s3Key": "amplify-builds/parseWebsiteTitle-326e59456169752b2f50-build.zip"
         }
       },
       "api": {
