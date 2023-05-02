@@ -15,7 +15,7 @@
       "function": {
         "parseWebsiteTitle": {
           "deploymentBucketName": "amplify-roamextension-staging-93448-deployment",
-          "s3Key": "amplify-builds/parseWebsiteTitle-326e59456169752b2f50-build.zip"
+          "s3Key": "amplify-builds/parseWebsiteTitle-79566838664d63323158-build.zip"
         }
       },
       "api": {
@@ -39,7 +39,7 @@
       "function": {
         "parseWebsiteTitle": {
           "deploymentBucketName": "amplify-roamextension-prod-165020-deployment",
-          "s3Key": "amplify-builds/parseWebsiteTitle-326e59456169752b2f50-build.zip"
+          "s3Key": "amplify-builds/parseWebsiteTitle-79566838664d63323158-build.zip"
         }
       },
       "api": {
