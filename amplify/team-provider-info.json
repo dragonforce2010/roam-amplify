@@ -19,7 +19,7 @@
         }
       },
       "api": {
-        "linkParser": {}
+        "roamExtensionBackendApi": {}
       }
     }
   },

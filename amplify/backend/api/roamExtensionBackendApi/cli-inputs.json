@@ -1,8 +1,8 @@
 {
   "version": 1,
   "paths": {
-    "/link/parseTitle": {
-      "name": "/link/parseTitle",
+    "/powerlink/parseTitle": {
+      "name": "/powerlink/parseTitle",
       "lambdaFunction": "parseWebsiteTitle",
       "permissions": {
         "setting": "open"
