@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "parseWebsiteTitle"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "larkOnRoamService"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,6 +24,11 @@
     }
   },
   "function": {
+    "larkOnRoamService": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "parseWebsiteTitle": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -23,6 +36,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_larkOnRoamService_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "larkOnRoamService"
+        }
+      ]
+    },
+    "AMPLIFY_function_larkOnRoamService_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "larkOnRoamService"
+        }
+      ]
+    },
     "AMPLIFY_function_parseWebsiteTitle_deploymentBucketName": {
       "usedBy": [
         {

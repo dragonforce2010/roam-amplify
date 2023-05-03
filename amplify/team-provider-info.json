@@ -16,6 +16,10 @@
         "parseWebsiteTitle": {
           "deploymentBucketName": "amplify-roamextension-staging-93448-deployment",
           "s3Key": "amplify-builds/parseWebsiteTitle-79566838664d63323158-build.zip"
+        },
+        "larkOnRoamService": {
+          "deploymentBucketName": "amplify-roamextension-staging-93448-deployment",
+          "s3Key": "amplify-builds/larkOnRoamService-6e4a51734c3835304f4a-build.zip"
         }
       },
       "api": {
